@@ -45,33 +45,39 @@ usersSchema.pre("save", async function (next) {
 
 const Users = mongoose.model('users', usersSchema);
 
-
 const if_exist = async(user) => {
     const u = await Users.exists({email : user.email});
-    if(u === false) {
+    if(u === null) {
         user.save()
     }
 }
 
-const mauny = new Users({
-    lastName: "Carpentier",
-    firstName: "Mauny",
-    email: "lessentiersdelhistoire@gmail.com",
-    password: "mauny",
+const admin = new Users({
+    lastName: "admin",
+    firstName: "admin",
+    email: "admin@admin.fr",
+    password: "admin",
     isSub: true,
     isAdmin: true
 });
 
-const tony = new Users({
-    lastName: "Facq",
-    firstName: "Tony",
-    email: "facqtony4@gmail.com",
-    password: "tony",
-    isSub: true,
-    isAdmin: true
+const abo = new Users({
+    lastName: "abo",
+    firstName: "abo",
+    email: "abo@abo.fr",
+    password: "abo",
+    isSub: true
 });
 
-if_exist(mauny);
-if_exist(tony);
+const test = new Users({
+    lastName: "test",
+    firstName: "test",
+    email: "test@test.fr",
+    password: "test"
+});
+
+if_exist(admin);
+if_exist(abo);
+if_exist(test);
 
 module.exports = { Users };
