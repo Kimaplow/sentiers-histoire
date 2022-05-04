@@ -27,3 +27,13 @@ cd .\front\
 npm i
 npm start
 ```
+
+## Connexion
+Il y a 3 comptes par défaut :
+- l'admin : admin@admin.fr / admin
+- l'abonné : abo@abo.fr / abo
+- l'utilisateur : test@test.fr / test
+
+Pour consulter les mails sur [ethereal](https://ethereal.email/messages)
+
+- cortney.tromp83@ethereal.email / 8jSK9dTuS5r25ag2qm
