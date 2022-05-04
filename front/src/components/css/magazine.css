@@ -1,0 +1,20 @@
+.magazine-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.magazine-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+}
+
+.magazine-info > button {
+    width: 12rem;
+}
+
+.summary-mag{
+    text-align: justify;
+}

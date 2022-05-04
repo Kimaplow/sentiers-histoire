@@ -1,0 +1,17 @@
+
+#header {
+    background-color : #C10003;
+}
+
+#header .navbar-nav, #header button{
+    font-weight: lighter;
+}
+
+#header button {
+    margin-top: -1px;
+    font-size: 18px;
+}
+
+.h {
+    color: #FED966 !important;
+}

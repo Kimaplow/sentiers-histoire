@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'cardo';
+    src: local('cardo'), url(./font/cardo.ttf) format('truetype');
+}
+
+* {
+    font-family: 'cardo' !important;
+}
+
+.badge, .btn-primary {
+    background-color : #C10003;
+}
+
+.card-link {
+    color : #C10003;
+}
+
+.div-btn-form {
+    width: 30rem;
+}
+
+a {
+    color: #C10003;
+}
+
+.pagination .page-item.active button {
+    background-color: #C10003;
+}
+
+input[type='radio']:after {
+    background-color: #000000;
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid #C10003;
+}
+
+.faq > * {
+    width: 19rem;
+}
+
+.abonnement-card > * {
+    width: 25rem;
+}
+
+.abonnement-card {
+    display: flex;
+    justify-content: center;
+}
+
+.bi-plus-circle-fill{
+    font-size: 1em;
+}
+
+#news .alert, #articles .alert, #magazine .alert, #profile .alert{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: larger;
+}
+
+.btn-card-mag {
+    color:#C10003;
+    margin-top: -6px;
+    font-weight: 500;
+}
